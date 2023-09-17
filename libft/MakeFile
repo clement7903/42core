@@ -5,7 +5,7 @@ CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
 # Source files - either specify all or wildcard *.c
-SRCS = ft_isalnum.c ft_isalpha.c ft_isdigit.c /
+SRCS = ft_isalnum.c ft_isalpha.c ft_isdigit.c \
 
 # Object files
 OBJS = $(SRCS:.c=.o)
