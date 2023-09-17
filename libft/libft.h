@@ -1,5 +1,5 @@
 #ifndef LIBFT_H
-#define LIBFT_H
+# define LIBFT_H
 
 // Header file contents go here
 int	ft_isalpha(int c);
