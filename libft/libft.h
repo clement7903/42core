@@ -14,5 +14,6 @@ size_t		ft_strlen(const char *str);
 void		*ft_memset(void *pointer, int c, size_t num);
 char		ft_toupper(char c);
 char		ft_tolower(char c);
+int	ft_strncmp(const char *str1, const char *str2, size_t n);
 
 #endif
