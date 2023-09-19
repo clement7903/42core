@@ -9,7 +9,8 @@ SRCS = ft_isalnum.c ft_isalpha.c ft_isascii.c \
 		ft_isdigit.c ft_isprint.c ft_strlen.c \
 		ft_memset.c \
 		ft_toupper.c ft_tolower.c \
-		ft_strncmp.c
+		ft_strncmp.c \
+		ft_bzero.c \
 
 # Object files
 OBJS = $(SRCS:.c=.o)
