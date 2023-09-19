@@ -19,5 +19,6 @@ void		ft_bzero(void *ptr, size_t size);
 void		*ft_memchr(const void *ptr, int value, size_t num);
 void		ft_memcpy(void *dst, const void *src, size_t num);
 int			ft_memcmp(const void *ptr1, const void *ptr2, size_t num);
+void		ft_memmove(void *dest, const void *src, size_t num);
 
 #endif
