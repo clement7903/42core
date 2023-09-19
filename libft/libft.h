@@ -20,5 +20,6 @@ void		*ft_memchr(const void *ptr, int value, size_t num);
 void		ft_memcpy(void *dst, const void *src, size_t num);
 int			ft_memcmp(const void *ptr1, const void *ptr2, size_t num);
 void		ft_memmove(void *dest, const void *src, size_t num);
+size_t		ft_strlcpy(char *dst, const char *src, size_t size);
 
 #endif
