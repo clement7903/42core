@@ -17,5 +17,6 @@ char		ft_tolower(char c);
 int			ft_strncmp(const char *str1, const char *str2, size_t n);
 void		ft_bzero(void *ptr, size_t size);
 void		*ft_memchr(const void *ptr, int value, size_t num);
+void		ft_memcpy(void *dst, const void *src, size_t num);
 
 #endif
