@@ -13,8 +13,8 @@
 
 void	ft_memcpy(void *dst, const void *src, size_t num)
 {
-	char	*d;
-	char	*s;
+	char		*d;
+	const char	*s;
 
 	d = (char *)dst;
 	s = (const char *)src;
