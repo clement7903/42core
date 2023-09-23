@@ -22,5 +22,6 @@ int			ft_memcmp(const void *ptr1, const void *ptr2, size_t num);
 void		ft_memmove(void *dest, const void *src, size_t num);
 size_t		ft_strlcpy(char *dst, const char *src, size_t size);
 char		*ft_strnstr(const char *hay, const char *needle, size_t search_len);
+size_t		ft_strlcat(char *dst, const char *src, size_t size);
 
 #endif
