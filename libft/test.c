@@ -20,3 +20,11 @@ int test_ft_strnstr() {
 		printf("Test 1 failed");
     return 0;
 }
+
+int test_ft_strlcat()
+/*
+FUNCTION FINDS returns the length of concat string assuming that there is infinite space
+*/
+{
+
+}
