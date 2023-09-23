@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: marvin <cng>                               +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/09/23 12:27:22 by marvin            #+#    #+#             */
+/*   Updated: 2023/09/23 12:27:22 by marvin           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef LIBFT_H
 # define LIBFT_H
 
@@ -23,5 +35,6 @@ void		ft_memmove(void *dest, const void *src, size_t num);
 size_t		ft_strlcpy(char *dst, const char *src, size_t size);
 char		*ft_strnstr(const char *hay, const char *needle, size_t search_len);
 size_t		ft_strlcat(char *dst, const char *src, size_t size);
+int			ft_atoi(const char *str);
 
 #endif
