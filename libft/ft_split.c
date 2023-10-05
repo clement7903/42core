@@ -106,10 +106,10 @@ char	**ft_split(char const *s, char c)
 
 	if (!s)
 		return (NULL);
-	numOfWords = count_words(s, c);
-	array = (char **)malloc(sizeof(char *) * (numOfWords + 1));
+	num_of_words = count_words(s, c);
+	array = (char **)malloc(sizeof(char *) * (num_of_words + 1));
 	if (!array)
 		return (NULL);
-	array = split(s, c, array, numOfWords);
+	array = split(s, c, array, num_of_words);
 	return (array);
 }
