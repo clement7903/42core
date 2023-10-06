@@ -22,6 +22,12 @@ SRCS = ft_isalnum.c ft_isalpha.c ft_isascii.c \
 # Object files
 OBJS = $(SRCS:.c=.o)
 
+# Source files - either specify all or wildcard *.c
+BONUS = ft_lstnew.c \
+
+# Object files
+BONUS_OBJS = $(BONUS:.c=.o)
+
 # Executable name
 TARGET = libft.a
 
@@ -34,11 +40,14 @@ $(TARGET):	$(OBJS)
 	ar rcs $(TARGET) $(OBJS)
 
 clean:
-	$(RM) $(OBJS)
+	$(RM) $(OBJS) $(BONUS_OBJS)
 
 fclean:	clean
 	$(RM) $(TARGET)
 
 re:		fclean all
 
-.PHONY: all clean fclean re
+bonus: $(OBJS) $(BONUS_OBJS)
+	ar rcs $(TARGET) $(OBJS) $(BONUS_OBJS)
+
+.PHONY: all clean fclean re bonus
