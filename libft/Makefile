@@ -24,7 +24,7 @@ OBJS = $(SRCS:.c=.o)
 
 # Source files - either specify all or wildcard *.c
 BONUS = ft_lstnew.c \
-			ft_lstnew \
+			ft_lstadd_front.c ft_lstadd_back.c \
 
 # Object files
 BONUS_OBJS = $(BONUS:.c=.o)
