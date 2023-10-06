@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marvin <cng>                               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/06 11:43:47 by marvin            #+#    #+#             */
-/*   Updated: 2023/10/06 11:43:47 by marvin           ###   ########.fr       */
+/*   Created: 2023/10/06 12:47:28 by marvin            #+#    #+#             */
+/*   Updated: 2023/10/06 12:47:28 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,10 @@
 
 /*
 PURPOSE:
-- takes a string & function
-- applies the function to each char
-- index is incremented with each iteration
-- pointer to the char is incremented 
+- writes a char to a specified file descriptor
 */
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char*))
+void	ft_putchar_fd(char c, int fd)
 {
-	size_t	i;
-
-	if (s && f)
-	{
-		i = 0;
-		while (*s)
-			f(i++, s++);
-	}
+	write(fd, &c, 1);
 }
