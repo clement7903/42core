@@ -13,7 +13,7 @@
 #include "libft.h"
 
 /*
-PURPOSE:
+PURPOSE: creates new element with content filled
 - allocate mem. for the new list element
 - set the content to be the pointer named 'content'
 - set the next field to be null
