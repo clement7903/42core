@@ -23,7 +23,7 @@ SRCS = ft_isalnum.c ft_isalpha.c ft_isascii.c \
 OBJS = $(SRCS:.c=.o)
 
 # Source files - either specify all or wildcard *.c
-BONUS = ft_lstnew.c ft_lstsize.c \
+BONUS = ft_lstnew.c ft_lstsize.c ft_lstlast.c \
 			ft_lstadd_front.c ft_lstadd_back.c \
 
 # Object files
