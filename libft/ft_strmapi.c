@@ -13,8 +13,8 @@
 #include "libft.h"
 /*
 PURPOSE:
-- ft_strmapi takes a string, applies a function 'f' 
-	(which returns a char)
+- ft_strmapi takes a string, applies a function 'f' on each char
+	(which returns a transformed char)
 */
 
 static char	*create_new_str(size_t n)
