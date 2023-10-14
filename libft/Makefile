@@ -31,25 +31,25 @@ BONUS = ft_lstnew.c ft_lstsize.c ft_lstlast.c \
 BONUS_OBJS = $(BONUS:.c=.o)
 
 # Executable name
-TARGET = libft.a
+NAME = libft.a
 
 RM = rm -rf
 
-all: $(TARGET)
+all: $(NAME)
 
-# target depends on objects
-$(TARGET):	$(OBJS)
-	ar rcs $(TARGET) $(OBJS)
+# NAME depends on objects
+$(NAME):	$(OBJS)
+	ar rcs $(NAME) $(OBJS)
 
 clean:
 	$(RM) $(OBJS) $(BONUS_OBJS)
 
 fclean:	clean
-	$(RM) $(TARGET)
+	$(RM) $(NAME)
 
 re:		fclean all
 
 bonus: $(OBJS) $(BONUS_OBJS)
-	ar rcs $(TARGET) $(OBJS) $(BONUS_OBJS)
+	ar rcs $(NAME) $(OBJS) $(BONUS_OBJS)
 
 .PHONY: all clean fclean re bonus
