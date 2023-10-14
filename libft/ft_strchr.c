@@ -6,9 +6,11 @@
 /*   By: clementng <clementng@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 11:04:55 by marvin            #+#    #+#             */
-/*   Updated: 2023/10/14 10:50:31 by clementng        ###   ########.fr       */
+/*   Updated: 2023/10/15 01:01:46 by clementng        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strchr(const char *str, int c)
 {

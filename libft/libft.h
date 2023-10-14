@@ -6,7 +6,7 @@
 /*   By: clementng <clementng@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/23 12:27:22 by marvin            #+#    #+#             */
-/*   Updated: 2023/10/14 11:07:47 by clementng        ###   ########.fr       */
+/*   Updated: 2023/10/15 01:00:18 by clementng        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,9 @@ void		ft_bzero(void *ptr, size_t size);
 void		*ft_memchr(const void *ptr, int value, size_t num);
 void		*ft_memcpy(void *dst, const void *src, size_t num);
 int			ft_memcmp(const void *ptr1, const void *ptr2, size_t num);
-void		ft_memmove(void *dest, const void *src, size_t num);
+void		*ft_memmove(void *dest, const void *src, size_t num);
+char		*ft_strchr(const char *str, int c);
+char		*ft_strrchr(const char *str, int ch);
 size_t		ft_strlcpy(char *dst, const char *src, size_t size);
 char		*ft_strnstr(const char *hay, const char *needle, size_t search_len);
 size_t		ft_strlcat(char *dst, const char *src, size_t size);
