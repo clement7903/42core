@@ -6,7 +6,7 @@
 /*   By: clementng <clementng@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 11:04:55 by marvin            #+#    #+#             */
-/*   Updated: 2023/10/15 01:01:46 by clementng        ###   ########.fr       */
+/*   Updated: 2023/10/15 08:58:59 by clementng        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,15 @@
 
 char	*ft_strchr(const char *str, int c)
 {
-	const char	*ptr;
-
-	ptr = str;
-	while (*ptr != '\0')
+	while (*str != '\0')
 	{
-		if (*ptr == c)
+		if (*str == (char)c)
 		{
-			return ((char *) ptr);
+			return ((char *) str);
 		}
-		ptr++;
+		str++;
 	}
+	if (*str == (char)c)
+		return ((char *) str);
 	return (NULL);
 }
