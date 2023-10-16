@@ -6,7 +6,7 @@
 /*   By: clementng <clementng@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/23 12:27:22 by marvin            #+#    #+#             */
-/*   Updated: 2023/10/16 21:19:47 by clementng        ###   ########.fr       */
+/*   Updated: 2023/10/16 21:49:57 by clementng        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <string.h>
-# include <limits.h>
 
 /* **************************************************************************
 STRUCT
@@ -48,7 +47,7 @@ void		ft_bzero(void *ptr, size_t size);
 void		*ft_memchr(const void *ptr, int value, size_t num);
 void		*ft_memcpy(void *dst, const void *src, size_t num);
 int			ft_memcmp(const void *ptr1, const void *ptr2, size_t num);
-void		*ft_memmove(void *dest, const void *src, size_t num);
+void		*ft_memmove(void *dst, const void *src, size_t num);
 char		*ft_strchr(const char *str, int c);
 char		*ft_strrchr(const char *str, int ch);
 size_t		ft_strlcpy(char *dst, const char *src, size_t size);
