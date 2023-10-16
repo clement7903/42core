@@ -6,7 +6,7 @@
 /*   By: clementng <clementng@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/23 12:27:22 by marvin            #+#    #+#             */
-/*   Updated: 2023/10/15 01:00:18 by clementng        ###   ########.fr       */
+/*   Updated: 2023/10/16 21:19:47 by clementng        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,8 +41,8 @@ int			ft_isascii(int c);
 int			ft_isprint(int c);
 size_t		ft_strlen(const char *str);
 void		*ft_memset(void *pointer, int c, size_t num);
-char		ft_toupper(char c);
-char		ft_tolower(char c);
+int			ft_toupper(int c);
+int			ft_tolower(int c);
 int			ft_strncmp(const char *str1, const char *str2, size_t n);
 void		ft_bzero(void *ptr, size_t size);
 void		*ft_memchr(const void *ptr, int value, size_t num);

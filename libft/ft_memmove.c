@@ -6,7 +6,7 @@
 /*   By: clementng <clementng@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 15:05:21 by marvin            #+#    #+#             */
-/*   Updated: 2023/10/15 00:11:48 by clementng        ###   ########.fr       */
+/*   Updated: 2023/10/16 21:30:30 by clementng        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ Functionality:
 
 void	*ft_memmove(void *dst, const void *src, size_t num)
 {
-	void	*d;
+	void		*d;
 
 	d = dst;
 	if (!dst && !src)
@@ -44,7 +44,7 @@ void	*ft_memmove(void *dst, const void *src, size_t num)
 	else
 	{
 		while (num--)
-			*(char *)dst++ = *(char *)src++;
+			*(unsigned char *)dst++ = *(unsigned char *)src++;
 	}
 	return (d);
 }
